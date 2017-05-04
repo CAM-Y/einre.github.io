@@ -25,6 +25,8 @@
 			events: 'hso61orbm6i887qo42imfvnt28@group.calendar.google.com',
 			timezone: 'local',
 			defaultView: 'agendaWeek',
+			minTime: '06:00:00',
+			maxTime: '24:00:00',
 			scrollTime: '09:00:00',
 			loading: function(bool) {
 				$('#loading').toggle(bool);
@@ -59,7 +61,8 @@
 	<center><img src="GAME Media/the-sound-of-revenge.png" alt="[GAME] The Sound of Revenge" height="100px" width="100px"></center>
 	<h1 align="center">[GAME] Events Page</h1>
     <h3 align="center">** Work In Progress **<br>Being Maintained by Einre</h3>
-	<center><table class="inlineTable" border="1">
+	<center>
+		<table class="inlineTable" border="1">
 		<tr><td>Contact In-Game: <b>Einre.9524</b></td></tr>
 		<tr><td><center><a href="mailto:Einre.9524@gmail.com">Email Me!</a></center></td></tr>
 	</table>
@@ -69,7 +72,8 @@
 		   <td><a href="https://calendar.google.com/calendar/embed?src=hso61orbm6i887qo42imfvnt28%40group.calendar.google.com&ctz=America/Chicago">HTML URL</a></th>
 		   <td><a href="GAME Media/GAME_Events.ics">iCal Download</a></th>
         </tr>
-	</table></center>
+	</table>
+	</center>
 	<br>
 	<div id='loading'>loading...</div>
 	<div id='calendar'></div>
