@@ -12,27 +12,27 @@
 <script>
 	$(document).ready(function() {
 		$('#calendar').fullCalendar({
+			aspectRatio: 1.25,
 			header: {
 				left: 'prev,next today',
 				center: 'title',
-				right: 'month,agendaWeek,listYear'
+				right: 'agendaWeek,month,listWeek'
 			},
+			nowIndicator: 'true',
 			displayEventTime: true, // don't show the time column in list view
 			googleCalendarApiKey: 'AIzaSyDZsLApurI-Rrl3-ElgUMaobqT_DVoYKUs',
 			// GAME Events
 			events: 'hso61orbm6i887qo42imfvnt28@group.calendar.google.com',
 			timezone: 'local',
+			defaultView: 'agendaWeek',
+			scrollTime: '09:00:00',
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 			}
-			
 		});
-		
 	});
-
 </script>
 <style>
-
 	body {
 		margin: 40px 10px;
 		padding: 0;
@@ -53,30 +53,25 @@
 		margin: 0 auto;
 		background-color: #FFFFFF;
 	}
-
 </style>
 </head>
 <body>
-	<div id='header'>
 	<center><img src="GAME Media/the-sound-of-revenge.png" alt="[GAME] The Sound of Revenge" height="100px" width="100px"></center>
 	<h1 align="center">[GAME] Events Page</h1>
     <h3 align="center">** Work In Progress **<br>Being Maintained by Einre</h3>
-	<table align="center" border="1px">
+	<center><table class="inlineTable" border="1">
 		<tr><td>Contact In-Game: <b>Einre.9524</b></td></tr>
 		<tr><td><center><a href="mailto:Einre.9524@gmail.com">Email Me!</a></center></td></tr>
-	</table><br><br>
-    <table align="center" border="1px">
+	</table>
+    <table class="inlineTable" border="1">
 		<th colspan=2 text-align="center">Calendar Links</th>
         <tr>
 		   <td><a href="https://calendar.google.com/calendar/embed?src=hso61orbm6i887qo42imfvnt28%40group.calendar.google.com&ctz=America/Chicago">HTML URL</a></th>
 		   <td><a href="GAME Media/GAME_Events.ics">iCal Download</a></th>
         </tr>
-	</table>
-	</div>
+	</table></center>
 	<br>
 	<div id='loading'>loading...</div>
-
 	<div id='calendar'></div>
-
 </body>
 </html>
