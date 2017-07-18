@@ -1,81 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>[GAME] Events</title>
+<title>[GAME] Home</title>
 <meta charset='utf-8' />
-<link href='GAMEFullCalendar/fullcalendar.min.css' rel='stylesheet' />
+<link href='GAMEFullCalendar/fullcalendar.css' rel='stylesheet' />
 <link href='GAMEFullCalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-<script src='GAMEFullCalendar/lib/moment.min.js'></script>
-<script src='GAMEFullCalendar/lib/jquery.min.js'></script>
-<script src='GAMEFullCalendar/fullcalendar.min.js'></script>
-<script src='GAMEFullCalendar/gcal.min.js'></script>
-<script>
-	$(document).ready(function() {
-		$('#calendar').fullCalendar({
-			aspectRatio: 1.25,
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'agendaWeek,month,listWeek'
-			},
-			nowIndicator: 'true',
-			displayEventTime: true, // don't show the time column in list view
-			googleCalendarApiKey: 'AIzaSyDZsLApurI-Rrl3-ElgUMaobqT_DVoYKUs',
-			// GAME Events
-			events: 'hso61orbm6i887qo42imfvnt28@group.calendar.google.com',
-			timezone: 'local',
-			defaultView: 'agendaWeek',
-			height: 'auto',
-			minTime: '06:00:00',
-			maxTime: '24:00:00',
-			loading: function(bool) {
-				$('#loading').toggle(bool);
-			}
-		});
-	});
-</script>
-<style>
-	body {
-		margin: 40px 10px;
-		padding: 0;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-		font-size: 14px;
-		background-color:#E8D6D2;
-	}
-	
-	#loading {
-		display: none;
-		position: absolute;
-		top: 10px;
-		right: 10px;
-	}
-
-	#calendar {
-		max-width: 70%;
-		margin: 0 auto;
-		background-color: #FFFFFF;
-	}
-</style>
 </head>
 <body>
-	<center><img src="GAME Media/the-sound-of-revenge.png" alt="[GAME] The Sound of Revenge" height="100px" width="100px"></center>
-	<h1 align="center">[GAME] Events Page</h1>
-    <h3 align="center">** Work In Progress **<br>Being Maintained by Einre</h3>
-	<center>
-		<table class="inlineTable" border="1">
-		<tr><td>Contact In-Game: <b>Einre.9524</b></td></tr>
-		<tr><td><center><a href="mailto:Einre.9524@gmail.com">Email Me!</a></center></td></tr>
-	</table>
-    <table class="inlineTable" border="1">
-		<th colspan=2 text-align="center">Calendar Links</th>
-        <tr>
-		   <td><a href="https://calendar.google.com/calendar/embed?src=hso61orbm6i887qo42imfvnt28%40group.calendar.google.com&ctz=America/Chicago">HTML URL</a></th>
-		   <td><a href="GAME Media/GAME_Events.ics">iCal Download</a></th>
-        </tr>
-	</table>
-	</center>
-	<br>
-	<div id='loading'>loading...</div>
-	<div id='calendar'></div>
+    <table id="t_events" align="center"><tr><td> <!-- Puts logo, title, text, and links in centered table -->
+		<img src="GAME Media/the-sound-of-revenge.png">
+	</td><td>
+		<h1 align="center">[GAME] Home</h1>
+    </td></tr></table>
+    <center><h2>Work In Progress</h2>
+    <br><br>
+    <a href="http://einre.github.io/GAME_Events.html">GAME Events</a></center>
 </body>
-</html>
