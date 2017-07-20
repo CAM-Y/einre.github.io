@@ -1,6 +1,6 @@
 # A Guild Wars 2 guild website for The Sound of Revenge [GAME].
 
-Designed by Einre and CAM-Y.
+Designed by Einre and Camy.
 
 ## Disclaimer
 
