@@ -1433,13 +1433,15 @@ body {
 
 .nav-ul {
     list-style-type: none;
-    margin: 0;
+	margin-top: 0px;
+    margin-bottom: 1px;
     padding: 0;
     overflow: hidden;
     background-color: #bab7b6;
     position: fixed;
     top: 0;
     width: 100%;
+	z-index: 10000; /* making sure the menu bar is always on top when scrolling */
 }
 
 .nav-li {
@@ -1467,9 +1469,42 @@ body {
     background-color: #540409;
 }
 
+#tc {
+	margin: auto;
+	border: 5px groove;
+	border-collapse: collapse;
+}
+
+#tc td {
+	vertical-align: baseline;
+}
+
+td img {
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
 /* Camy Added */
+
+div {
+    display: block;
+}
+
+#main {
+    height: 795px;
+}
 
 #content {
     float: left;
     height: 100%;
+}
+
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
 }
